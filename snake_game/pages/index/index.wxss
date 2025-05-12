@@ -1,0 +1,86 @@
+/* 样式文件 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */ /* 调整为 space-around 或 space-between 可能更好 */
+  justify-content: space-around; /* 让元素在垂直方向上均匀分布 */
+  height: 100vh;
+  padding: 20rpx; /* 添加一些内边距 */
+  box-sizing: border-box; /* 让 padding 不影响总高度 */
+}
+
+.score {
+  font-size: 36rpx; /* 使用 rpx 单位 */
+  font-weight: bold;
+  /* margin-bottom: 10px; */ /* 由 flex 布局控制间距 */
+}
+.game-area {
+  /* width: 300px; */
+  /* height: 300px; */
+  width: 90vw; /* 使用视口宽度百分比 */
+  height: 90vw; /* 保持正方形 */
+  max-width: 600rpx; /* 限制最大宽度 */
+  max-height: 600rpx; /* 限制最大高度 */
+  background-color: #f0f0f0;
+  position: relative;
+  border: 1px solid #333;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.game-controls {
+  /* margin-top: 10px; */
+  display: flex;
+  justify-content: center;
+  /* width: 300px; */
+  width: 90vw; /* 与 game-area 宽度一致 */
+  max-width: 600rpx;
+}
+
+.pause-btn {
+  width: 200rpx; /* 使用 rpx */
+  height: 80rpx; /* 使用 rpx */
+  font-size: 32rpx; /* 使用 rpx */
+  font-weight: bold;
+  background-color: #e0e0e0;
+  border-radius: 10rpx;
+  color: #333;
+}
+
+.controls {
+  /* margin-top: 15px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 300px; */
+  width: 90vw; /* 与 game-area 宽度一致 */
+  max-width: 600rpx;
+}
+
+.middle-row {
+  display: flex;
+  justify-content: space-between; /* 让左右按钮分开 */
+  width: 100%;
+  margin: 10rpx 0;
+}
+
+.control-btn {
+  /* margin: 5px; */ /* 由 flex 控制 */
+  width: 150rpx; /* 使用 rpx */
+  height: 80rpx; /* 使用 rpx */
+  font-size: 32rpx; /* 使用 rpx */
+  font-weight: bold;
+  background-color: #f8f8f8;
+  border-radius: 10rpx;
+  display: flex; /* 用于垂直居中文字 */
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-up, .btn-down {
+  width: 150rpx; /* 统一宽度 */
+}
+
+.btn-left, .btn-right {
+  width: 150rpx; /* 统一宽度 */
+}
