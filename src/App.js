@@ -460,19 +460,17 @@ function App() {
                   left: 0,
                   bottom: 0,
                   height: 4,
-                  width: `${(cooldown > 0 ? cooldown : 1) * 100}%`,
+                  width: `${((cooldown > 0 ? cooldown : 1) * 100)}%`,
                   background: '#2196f3',
                   transition: 'width 0.1s linear',
                   zIndex: 1,
                   borderRadius: 2,
-                  pointerEvents: 'none',
-                }} />
+                  pointerEvents: 'none'
+                }}></span>
               )}
             </button>
             <button onClick={hireWorker} disabled={dead} style={{ marginRight: 12, padding: '8px 16px' }}>招募工人（10木材，提升等级）</button>
             <button onClick={addWood} disabled={dead} style={{ marginRight: 12, padding: '8px 16px' }}>添加木材（-1）</button>
-            
-            {/* 天气显示 */}
             <div style={{ marginTop: 16, marginBottom: 8, color: weather.temp<=-10?'#c00':'#2196f3', fontWeight: 'bold' }}>
               天气：{weather.desc}，温度：{weather.temp}℃
             </div>
@@ -498,17 +496,16 @@ function App() {
             {/* 功能性建筑操作 */}
             <button onClick={()=>triggerTrapOrHunt('trap')} disabled={dead} style={{ marginRight: 12, padding: '8px 16px' }}>触发陷阱捕获</button>
             <button onClick={()=>triggerTrapOrHunt('hunter')} disabled={dead} style={{ marginRight: 12, padding: '8px 16px' }}>猎人小屋狩猎</button>
-            {/* 展示建筑 */}
             <div style={{ marginTop: 16, marginBottom: 8 }}>
               {buildings.length > 0 ? (
                 <>
                   <div style={{ fontWeight: 'bold', marginBottom: 4 }}>已建造的建筑：</div>
                   {buildings.map(b => (
                     <div key={b.type}>
-                      {b.type==='house'?`房子 x${b.count}`:
-                        b.type==='trap'?`陷阱 Lv.${b.level||1}`:
-                        b.type==='expansion'?`扩建 Lv.${b.level||1}`:
-                        b.type==='hunter'?`猎人小屋 Lv.${b.level||1}`:b.type}
+                      {b.type === 'house' ? `房子 x${b.count}` :
+                       b.type === 'trap' ? `陷阱 Lv.${b.level || 1}` :
+                       b.type === 'expansion' ? `扩建 Lv.${b.level || 1}` :
+                       b.type === 'hunter' ? `猎人小屋 Lv.${b.level || 1}` : b.type}
                     </div>
                   ))}
                 </>
@@ -516,7 +513,6 @@ function App() {
                 <div>暂无建筑，请先建造一些建筑。</div>
               )}
             </div>
-            {/* 展示特殊材料与人口 */}
             <div style={{marginTop:8}}>
               <span>人口：{population}</span>
               <span style={{marginLeft:12}}>毛皮：{specialMaterials.fur} 鲜肉：{specialMaterials.meat} 鳞片：{specialMaterials.scale} 兽齿：{specialMaterials.tooth}</span>
