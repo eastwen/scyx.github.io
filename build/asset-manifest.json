@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-resource-collector/static/css/main.b2e2d653.chunk.css",
+    "main.js": "/react-resource-collector/static/js/main.ba19ebe7.chunk.js",
+    "main.js.map": "/react-resource-collector/static/js/main.ba19ebe7.chunk.js.map",
+    "runtime~main.js": "/react-resource-collector/static/js/runtime~main.58e1517c.js",
+    "runtime~main.js.map": "/react-resource-collector/static/js/runtime~main.58e1517c.js.map",
+    "static/js/2.c7821bdd.chunk.js": "/react-resource-collector/static/js/2.c7821bdd.chunk.js",
+    "static/js/2.c7821bdd.chunk.js.map": "/react-resource-collector/static/js/2.c7821bdd.chunk.js.map",
+    "static/js/3.a29efab2.chunk.js": "/react-resource-collector/static/js/3.a29efab2.chunk.js",
+    "static/js/3.a29efab2.chunk.js.map": "/react-resource-collector/static/js/3.a29efab2.chunk.js.map",
+    "index.html": "/react-resource-collector/index.html",
+    "precache-manifest.dd89548899c0cb00a5c6ee468c424f7d.js": "/react-resource-collector/precache-manifest.dd89548899c0cb00a5c6ee468c424f7d.js",
+    "service-worker.js": "/react-resource-collector/service-worker.js",
+    "static/css/main.b2e2d653.chunk.css.map": "/react-resource-collector/static/css/main.b2e2d653.chunk.css.map"
+  }
+}

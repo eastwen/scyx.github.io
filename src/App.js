@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./app.css";
 
 function App() {
   // 标签页状态
@@ -645,5 +645,3 @@ function App() {
 }
 
 export default App;
-
-<style>{`@keyframes spin { 0% { transform: rotate(0deg);} 100% { transform: rotate(360deg);} }\n@keyframes progressBarFill { 0% { transform: scaleX(0);} 100% { transform: scaleX(1);} }`}</style>
