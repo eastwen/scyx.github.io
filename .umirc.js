@@ -1,6 +1,6 @@
 export default {
-  base: '/',
-  publicPath: '/',
+  base: '/react-resource-collector/',
+  publicPath: '/react-resource-collector/',
   outputPath: 'dist',
   hash: true,
   history: {
