@@ -1,0 +1,46 @@
+{
+  "homepage": "https://eastwen.github.io/scyx.github.io", 
+  "name": "scyx.github.io", 
+  "author": "luyi <2160360887@qq.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
+  },
+  "resolutions": {
+    "moment": "^2.30.1"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^7.1.0",
+    "@ant-design/icons": "^5.4.0",
+    "@ant-design/pro-components": "^2.7.15",
+    "@dnd-kit/core": "^6.1.0",
+    "@dnd-kit/modifiers": "^7.0.0",
+    "@dnd-kit/sortable": "^8.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "ahooks": "^3.8.1",
+    "antd": "^5.20.4",
+    "dayjs": "^1.11.13",
+    "dva": "^2.4.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "normalize.css": "^8.0.1",
+    "react-cropper": "^2.3.3",
+    "react-intl": "^6.7.1",
+    "react-quill": "^2.0.0",
+    "umi": "^4.3.15"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@umijs/plugins": "^4.3.18",
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.0.3",
+    "umi-plugin-react": "^1.15.9"
+  },
+  "packageManager": "pnpm@9.9.0+sha1.3edbe440f4e570aa8f049adbd06b9483d55cc2d2"
+}
